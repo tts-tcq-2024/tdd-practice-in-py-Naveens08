@@ -8,4 +8,5 @@ def ifEmptyString(numbers: str) -> int:
 def add(numbers: str) -> int:
     if ifEmptyString(numbers) == 0:
         return 0
-    return -1
+    num_list = numbers.split(",")
+    return sum(int(num) for num in num_list)
