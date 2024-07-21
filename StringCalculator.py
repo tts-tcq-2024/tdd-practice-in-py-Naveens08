@@ -1,4 +1,4 @@
-def ifEmptyString(numbers):
+def ifEmptyString(numbers: str) -> int:
     if not numbers:
         return 0
     if numbers == "0":
@@ -6,6 +6,6 @@ def ifEmptyString(numbers):
     return -1
 
 def add(numbers: str) -> int:
-    if not ifEmptyString(numbers):
+    if ifEmptyString(numbers) == 0:
         return 0
     return -1
