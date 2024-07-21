@@ -1,4 +1,4 @@
-def ifEmptyString(numbers)
+def ifEmptyString(numbers):
     if not numbers:
         return 0;
 
