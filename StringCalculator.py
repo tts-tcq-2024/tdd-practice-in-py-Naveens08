@@ -6,7 +6,7 @@ def ifEmptyString(numbers: str) -> int:
     return -1
 
 def ifNumberLessThanThousand(numbers: str) -> int:
-    if int(num) <= 1000:
+    if int(numbers) <= 1000:
         return 0
     return -1
 
