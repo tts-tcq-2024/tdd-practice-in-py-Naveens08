@@ -8,7 +8,7 @@ def ifEmptyString(numbers: str) -> int:
     return -1
 
 def extract_numbers(string):
-    numbers = re.findall(r'\d+', string)
+    numbers = re.findall(r'-?\d+', string)
     numbers = list(map(int, numbers))
     return numbers
 
