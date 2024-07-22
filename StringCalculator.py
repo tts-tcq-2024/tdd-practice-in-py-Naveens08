@@ -12,7 +12,7 @@ def extract_numbers(string):
     numbers = list(map(int, numbers))
     return numbers
 
-def GetNegativeNumbers(num_list: list) -> list
+def GetNegativeNumbers(num_list: list) -> list:
     NegativeNum = []
     for num in num_list:
         if int(num) < 0:
