@@ -12,13 +12,16 @@ def extract_numbers(string):
     numbers = list(map(int, numbers))
     return numbers
 
-def CheckNegativeNumbers(num_list: list):
+def GetNegativeNumbers(num_list: list) -> list
     NegativeNum = []
     for num in num_list:
         if int(num) < 0:
             NegativeNum.append(int(num))
+    
+def CheckNegativeNumbers(num_list: list):
+    NegativeNum = GetNegativeNumbers(num_list)
     if NegativeNum:
-        raise ValueError(f"Negatives not allowed: {','.join(map(str, NegativeNum))}")
+        raise Exception(f"Negatives not allowed: {', '.join(map(str, NegativeNum))}")
     
 def sumNumList(num_list: list, max_value) -> int:
     NumSum = 0
