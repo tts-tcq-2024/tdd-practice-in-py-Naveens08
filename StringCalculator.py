@@ -17,6 +17,7 @@ def GetNegativeNumbers(num_list: list) -> list:
     for num in num_list:
         if int(num) < 0:
             NegativeNum.append(int(num))
+    return NegativeNum
     
 def CheckNegativeNumbers(num_list: list):
     NegativeNum = GetNegativeNumbers(num_list)
