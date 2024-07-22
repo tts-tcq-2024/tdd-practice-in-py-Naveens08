@@ -16,10 +16,9 @@ class TestStringCalculator(unittest.TestCase):
 
         def test_expectSumWithCustomDelimiter(self):
                 self.assertEqual(add("//;\n1;2"), 3)
-"""
+
         def test_expectSumWithNewlineDelimiter(self):
                 self.assertEqual(add("1\n2,3"),6);
-"""
 
 if __name__ == '__main__':
     unittest.main()
