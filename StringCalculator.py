@@ -12,8 +12,17 @@ def extract_numbers(string):
     numbers = list(map(int, numbers))
     return numbers
 
+def CheckNegativeNumbers(num_list: list):
+    NegativeNum = []
+    for num in num_list:
+        if int(num) < 0:
+            NegativeNum.append(int(num))
+    if NegativeNum:
+        raise ValueError(f"Negatives not allowed: {','.join(map(str, NegativeNum))}")
+    
 def sumNumList(num_list: list, max_value) -> int:
     NumSum = 0
+    CheckNegativeNumbers(num_list)
     for num in num_list:
         if int(num) <= max_value:
             NumSum = NumSum + int(num)
